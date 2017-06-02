@@ -23,6 +23,10 @@ To be able to run this demonstration you will need the following:
 ## BPM Process Deployment
 The IBM BPM .twx file is under the bpm folder and should be uploaded to your BPM on Cloud instance Process Center or your IBM BPM Process Center. It is based on version 8.5.7.
 
+## Installing and Running
+
+To install this process, take the TWX file that is provided and download it. Next navigate to the Process Center of your BPM on Cloud instance and click Import Process App on the right. Next you will go through the steps of importing the app. It should appear in your Process Center after importation is complete. Next click Open in Designer, ensure that the teams have you listed in them. After that, go to Process Portal and launch the Simple Supplier Onboarding Process.
+
 
 
 # Contribute

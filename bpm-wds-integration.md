@@ -1,8 +1,8 @@
 # Watson Discovery Readme
 
 ## Integration
-The Watson Discovery service was integrated via a node.JS microserver that accessed the Watson Discovery service via this API
-`var DiscoveryV1 = require('watson-developer-cloud/discovery/v1');`. What this allowed is us to easily host a microserver that accepted postRequests with 2 parameters, product and company. The flow of this service is, BPM fires a ReadFromHTTP from the SystemData Dependency, with the 2 parameters attached as parameters, the node server is accessed, takes the two posted parameters, accesses the Discovery API, and returns the results as a JSON object to BPM.
+The Watson Discovery service was integrated via a node.JS microservice that accessed the Watson Discovery service via this API
+`var DiscoveryV1 = require('watson-developer-cloud/discovery/v1');`. What this allowed is us to easily host a microservice that accepted postRequests with 2 parameters, product and company. The flow of this service is, BPM fires a ReadFromHTTP from the SystemData Dependency, with the 2 parameters attached as parameters, the node server is accessed, takes the two posted parameters, accesses the Discovery API, and returns the results as a JSON object to BPM.
 
 ## API Call JS
 ![discoveryJS](docs/discovery-js.png)
@@ -66,9 +66,9 @@ threshold = score + ' out of a threshold goal of ' + this.context.options.thresh
 this.context.options.thresholdText.set('value',threshold);
 this.context.options.progressText.set('value','me.setProgress('+score+')');
 ```
- 
- 
- 
+
+
+
 ### Clickable URL Coachview
 
 Inline JS
